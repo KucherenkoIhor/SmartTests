@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.ughtu.smarttests.test" >
+    package="com.ughtu.smarttests.test">
 
-    <uses-sdk
-        android:minSdkVersion="14"
-        android:targetSdkVersion="24" />
-
-    <instrumentation
-        android:name="android.support.test.runner.AndroidJUnitRunner"
-        android:functionalTest="false"
-        android:handleProfiling="false"
-        android:label="Tests for com.ughtu.smarttests"
-        android:targetPackage="com.ughtu.smarttests" />
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="25" />
 
     <application>
         <uses-library android:name="android.test.runner" />
     </application>
 
+    <instrumentation android:name="android.test.InstrumentationTestRunner"
+                     android:targetPackage="com.ughtu.smarttests"
+                     android:handleProfiling="false"
+                     android:functionalTest="false"
+                     android:label="Tests for com.ughtu.smarttests"/>
 </manifest>
