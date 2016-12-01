@@ -5,7 +5,8 @@ package ughtu.com.smarttests.shared
  */
 import android.app.Application
 import dagger.Component
-import ughtu.com.smarttests.LoginActivity
+import ughtu.com.smarttests.views.LoginActivity
+import ughtu.com.smarttests.views.SubjectsActivity
 import javax.inject.Singleton
 
 class AppDelegate : Application() {
@@ -17,6 +18,8 @@ class AppDelegate : Application() {
     interface AppInjector {
 
         fun inject(activity: LoginActivity)
+
+        fun inject(activity: SubjectsActivity)
 
     }
 

@@ -56,12 +56,16 @@
         "source": "/home/igor/Рабочий стол/projects/SmartTests/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/layout/abc_action_menu_item_layout.xml"
     },
     {
-        "merged": "/home/igor/Рабочий стол/projects/SmartTests/app/build/intermediates/res/merged/debug/layout/notification_media_action.xml",
-        "source": "/home/igor/Рабочий стол/projects/SmartTests/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/layout/notification_media_action.xml"
+        "merged": "/home/igor/Рабочий стол/projects/SmartTests/app/build/intermediates/res/merged/debug/layout/view_item.xml",
+        "source": "/home/igor/Рабочий стол/projects/SmartTests/app/src/main/res/layout/view_item.xml"
     },
     {
         "merged": "/home/igor/Рабочий стол/projects/SmartTests/app/build/intermediates/res/merged/debug/layout/notification_template_icon_group.xml",
         "source": "/home/igor/Рабочий стол/projects/SmartTests/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/layout/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/home/igor/Рабочий стол/projects/SmartTests/app/build/intermediates/res/merged/debug/layout/notification_media_action.xml",
+        "source": "/home/igor/Рабочий стол/projects/SmartTests/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/layout/notification_media_action.xml"
     },
     {
         "merged": "/home/igor/Рабочий стол/projects/SmartTests/app/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
@@ -214,6 +218,10 @@
     {
         "merged": "/home/igor/Рабочий стол/projects/SmartTests/app/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
         "source": "/home/igor/Рабочий стол/projects/SmartTests/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/layout/abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "/home/igor/Рабочий стол/projects/SmartTests/app/build/intermediates/res/merged/debug/layout/activity_subjects.xml",
+        "source": "/home/igor/Рабочий стол/projects/SmartTests/app/src/main/res/layout/activity_subjects.xml"
     },
     {
         "merged": "/home/igor/Рабочий стол/projects/SmartTests/app/build/intermediates/res/merged/debug/layout/notification_action.xml",
