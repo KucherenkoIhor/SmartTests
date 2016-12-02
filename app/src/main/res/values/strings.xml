@@ -15,4 +15,7 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+    <string name="tests">Test</string>
+    <string name="subjects">Subjects</string>
+    <string name="lectures">Lectures</string>
 </resources>

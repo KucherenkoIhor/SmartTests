@@ -5,7 +5,7 @@
     android:id="@+id/activity_subjects"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="ughtu.com.smarttests.views.SubjectsActivity">
+    tools:context="ughtu.com.smarttests.views.activities.SubjectsActivity">
 
     <ProgressBar
         android:layout_gravity="center"

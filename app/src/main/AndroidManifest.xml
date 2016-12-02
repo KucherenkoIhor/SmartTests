@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".views.LoginActivity"
+            android:name=".views.activities.LoginActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,7 +21,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".views.SubjectsActivity"></activity>
+        <activity android:name=".views.activities.SubjectsActivity" />
+        <activity android:name=".views.activities.LecturesActivity" />
+        <activity android:name=".views.activities.TestsActivity"></activity>
     </application>
 
 </manifest>

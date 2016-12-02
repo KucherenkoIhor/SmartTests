@@ -5,8 +5,10 @@ package ughtu.com.smarttests.shared
  */
 import android.app.Application
 import dagger.Component
-import ughtu.com.smarttests.views.LoginActivity
-import ughtu.com.smarttests.views.SubjectsActivity
+import ughtu.com.smarttests.views.activities.LecturesActivity
+import ughtu.com.smarttests.views.activities.LoginActivity
+import ughtu.com.smarttests.views.activities.SubjectsActivity
+import ughtu.com.smarttests.views.activities.TestsActivity
 import javax.inject.Singleton
 
 class AppDelegate : Application() {
@@ -20,6 +22,10 @@ class AppDelegate : Application() {
         fun inject(activity: LoginActivity)
 
         fun inject(activity: SubjectsActivity)
+
+        fun inject(activity: LecturesActivity)
+
+        fun inject(activity: TestsActivity)
 
     }
 

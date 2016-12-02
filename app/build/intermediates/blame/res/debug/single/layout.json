@@ -24,12 +24,20 @@
         "source": "/home/igor/Рабочий стол/projects/SmartTests/app/build/intermediates/exploded-aar/com.android.support/design/25.0.1/res/layout/design_layout_tab_text.xml"
     },
     {
+        "merged": "/home/igor/Рабочий стол/projects/SmartTests/app/build/intermediates/res/merged/debug/layout/activity_tests.xml",
+        "source": "/home/igor/Рабочий стол/projects/SmartTests/app/src/main/res/layout/activity_tests.xml"
+    },
+    {
         "merged": "/home/igor/Рабочий стол/projects/SmartTests/app/build/intermediates/res/merged/debug/layout/design_bottom_navigation_item.xml",
         "source": "/home/igor/Рабочий стол/projects/SmartTests/app/build/intermediates/exploded-aar/com.android.support/design/25.0.1/res/layout/design_bottom_navigation_item.xml"
     },
     {
         "merged": "/home/igor/Рабочий стол/projects/SmartTests/app/build/intermediates/res/merged/debug/layout/notification_template_big_media.xml",
         "source": "/home/igor/Рабочий стол/projects/SmartTests/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/layout/notification_template_big_media.xml"
+    },
+    {
+        "merged": "/home/igor/Рабочий стол/projects/SmartTests/app/build/intermediates/res/merged/debug/layout/activity_lectures.xml",
+        "source": "/home/igor/Рабочий стол/projects/SmartTests/app/src/main/res/layout/activity_lectures.xml"
     },
     {
         "merged": "/home/igor/Рабочий стол/projects/SmartTests/app/build/intermediates/res/merged/debug/layout/design_navigation_menu.xml",
@@ -60,12 +68,12 @@
         "source": "/home/igor/Рабочий стол/projects/SmartTests/app/src/main/res/layout/view_item.xml"
     },
     {
-        "merged": "/home/igor/Рабочий стол/projects/SmartTests/app/build/intermediates/res/merged/debug/layout/notification_template_icon_group.xml",
-        "source": "/home/igor/Рабочий стол/projects/SmartTests/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/layout/notification_template_icon_group.xml"
-    },
-    {
         "merged": "/home/igor/Рабочий стол/projects/SmartTests/app/build/intermediates/res/merged/debug/layout/notification_media_action.xml",
         "source": "/home/igor/Рабочий стол/projects/SmartTests/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/layout/notification_media_action.xml"
+    },
+    {
+        "merged": "/home/igor/Рабочий стол/projects/SmartTests/app/build/intermediates/res/merged/debug/layout/notification_template_icon_group.xml",
+        "source": "/home/igor/Рабочий стол/projects/SmartTests/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/layout/notification_template_icon_group.xml"
     },
     {
         "merged": "/home/igor/Рабочий стол/projects/SmartTests/app/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
@@ -230,6 +238,10 @@
     {
         "merged": "/home/igor/Рабочий стол/projects/SmartTests/app/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
         "source": "/home/igor/Рабочий стол/projects/SmartTests/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/layout/abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "/home/igor/Рабочий стол/projects/SmartTests/app/build/intermediates/res/merged/debug/layout/fragment_test.xml",
+        "source": "/home/igor/Рабочий стол/projects/SmartTests/app/src/main/res/layout/fragment_test.xml"
     },
     {
         "merged": "/home/igor/Рабочий стол/projects/SmartTests/app/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
