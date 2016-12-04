@@ -18,4 +18,6 @@
     <string name="tests">Test</string>
     <string name="subjects">Subjects</string>
     <string name="lectures">Lectures</string>
+    <string name="confirm">Confirm</string>
+    <string name="choose_correct_anwsers">Выберите правильные варианты ответа:</string>
 </resources>

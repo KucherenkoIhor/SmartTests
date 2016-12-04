@@ -5,6 +5,7 @@ package ughtu.com.smarttests.shared
  */
 import android.app.Application
 import dagger.Component
+import ughtu.com.smarttests.views.TestFragment
 import ughtu.com.smarttests.views.activities.LecturesActivity
 import ughtu.com.smarttests.views.activities.LoginActivity
 import ughtu.com.smarttests.views.activities.SubjectsActivity
@@ -26,6 +27,8 @@ class AppDelegate : Application() {
         fun inject(activity: LecturesActivity)
 
         fun inject(activity: TestsActivity)
+
+        fun inject(fragment: TestFragment)
 
     }
 

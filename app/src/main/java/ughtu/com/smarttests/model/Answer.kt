@@ -19,4 +19,6 @@ class Answer {
     @SerializedName("text")
     var text: String? = null
 
+    var isChecked = false
+
 }
