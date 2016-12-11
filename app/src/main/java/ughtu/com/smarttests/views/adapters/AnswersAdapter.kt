@@ -13,6 +13,21 @@ import ughtu.com.smarttests.model.Answer
  */
 class AnswersAdapter: RecyclerView.Adapter<AnswersAdapter.AnswerViewHolder>() {
 
+    var isCorrect = false
+    private set(value) {
+        field = value
+    }
+    get() {
+        var result = true
+        dataSource?.forEach {
+            result = it.isChecked == it.isCorrect
+            if(result == false) {
+                return false
+            }
+        }
+        return result
+    }
+
     var dataSource: List<Answer>? = null
         set(value) {
             field  = value

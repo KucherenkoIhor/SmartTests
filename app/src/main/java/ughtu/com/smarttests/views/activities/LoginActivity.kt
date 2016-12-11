@@ -47,6 +47,7 @@ class LoginActivity : AppCompatActivity() {
             val pass = mPassEditText.text.toString()
             val selectedGroup = mGroups[mSpinner.selectedItemPosition]
             if(pass == selectedGroup.pass) {
+                AppDelegate.groupName = selectedGroup.name
                 startActivity(SubjectsActivity.newInstance(this))
             } else {
                 Toast.makeText(this, "Incorrect password", Toast.LENGTH_LONG).show()
@@ -74,7 +75,5 @@ class LoginActivity : AppCompatActivity() {
     private fun inject() {
         (application as AppDelegate).injector?.inject(this)
     }
-
-
 }
 

@@ -52,6 +52,7 @@ class LecturesActivity : AppCompatActivity() {
         mAdapter.onItemClickListener = View.OnClickListener { view ->
             val holder = mRecyclerView.findContainingViewHolder(view) as LecturesAdapter.LectureViewHolder
             val lectureId = holder.lecture?.id ?: return@OnClickListener
+            AppDelegate.lectureId = lectureId
             startActivity(TestsActivity.newInstance(this, lectureId))
         }
 

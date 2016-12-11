@@ -31,6 +31,8 @@ class TestFragment : Fragment() {
     @Inject
     lateinit var mAPI: ApiInterface
 
+    val adapter = AnswersAdapter()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         (activity.application as AppDelegate).injector?.inject(this)
@@ -45,7 +47,6 @@ class TestFragment : Fragment() {
         questionTextView.text = question?.text
         recyclerView.layoutManager = LinearLayoutManager(activity)
         recyclerView.setHasFixedSize(true)
-        val adapter = AnswersAdapter()
         recyclerView.adapter = adapter
         adapter.onItemClickListener = View.OnClickListener { view ->
             val holder = recyclerView.findContainingViewHolder(view) as AnswersAdapter.AnswerViewHolder

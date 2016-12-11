@@ -1,7 +1,6 @@
 package ughtu.com.smarttests.shared
 
-import retrofit2.http.GET
-import retrofit2.http.Path
+import retrofit2.http.*
 import rx.Observable
 import ughtu.com.smarttests.model.*
 
@@ -24,5 +23,12 @@ interface ApiInterface {
 
     @GET("/api/answers/{questionId}")
     fun getAnswers(@Path("questionId") questionId: Long) : Observable<List<Answer>>
+
+    @FormUrlEncoded
+    @POST("/api/result")
+    fun addResult(
+            @Field("groupName") groupName: String,
+            @Field("value") value: Int,
+            @Field("lectureId") lectureId: Long) : Observable<Boolean>
 
 }

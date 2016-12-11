@@ -8,7 +8,10 @@ import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentStatePagerAdapter
 import android.support.v4.view.ViewPager
 import android.view.View
+import rx.android.schedulers.AndroidSchedulers
 import ughtu.com.smarttests.model.Question
+import ughtu.com.smarttests.shared.ApiInterface
+import ughtu.com.smarttests.shared.AppDelegate
 import ughtu.com.smarttests.views.TestFragment
 
 /**
@@ -22,6 +25,10 @@ class TestPagerAdapter(fm: FragmentManager?) : FragmentStatePagerAdapter(fm) {
         notifyDataSetChanged()
     }
 
+    var api: ApiInterface? = null
+
+    var correctAnswers = 0
+
     override fun getCount(): Int {
         return dataSource?.size ?: 0
     }
@@ -34,6 +41,9 @@ class TestPagerAdapter(fm: FragmentManager?) : FragmentStatePagerAdapter(fm) {
                 done(fragment.activity)
             } else {
                 val viewPager = fragment.view?.parent as ViewPager?
+                if(fragment.adapter.isCorrect) {
+                    correctAnswers ++
+                }
                 viewPager?.setCurrentItem(position + 1, true)
             }
         }
@@ -42,18 +52,20 @@ class TestPagerAdapter(fm: FragmentManager?) : FragmentStatePagerAdapter(fm) {
     }
 
     private fun done(context: Context?) {
-        var correctAnswers = 0
-        dataSource?.forEach { question ->
-            question.answers?.forEach {
-                if(it.isChecked) {
-                    it.isCorrect
-                }
-            }
+
+        val result = (correctAnswers.toDouble() / dataSource!!.size.toDouble()) * 100
+        try {
+            api?.
+                    addResult(AppDelegate.groupName!!, result.toInt(), AppDelegate.lectureId!!)?.
+                    observeOn(AndroidSchedulers.mainThread())?.
+                    subscribe({}, { it.printStackTrace() })
+        } catch (e : Exception) {
+            e.printStackTrace()
         }
         if(context == null) return
         val alert = AlertDialog.Builder(context)
         alert.setTitle("Результат!")
-        alert.setMessage("Вы набрали баллов!")
+        alert.setMessage("Вы набрали баллов $result!")
         alert.setPositiveButton(android.R.string.ok) { a1, a2 ->
             a1.dismiss()
             (context as Activity).finish()

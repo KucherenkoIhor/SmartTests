@@ -45,6 +45,7 @@ class TestsActivity : AppCompatActivity() {
         supportActionBar?.setTitle(R.string.tests)
         (application as AppDelegate).injector?.inject(this)
         mViewPager.adapter = mAdapter
+        mAdapter.api = mAPI
 
         val lectureId = intent.getLongExtra(LECTURE_ID, 0)
         mAPI.getQuestions(lectureId)

@@ -16,6 +16,11 @@ class AppDelegate : Application() {
 
     var injector: AppInjector? = null
 
+    companion object {
+        var groupName: String? = null
+        var lectureId: Long? = null
+    }
+
     @Singleton
     @Component(modules = arrayOf(NewsModule::class))
     interface AppInjector {
